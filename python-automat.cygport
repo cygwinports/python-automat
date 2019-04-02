@@ -1,0 +1,15 @@
+ORIG_PN="Automat"
+inherit python-wheel
+
+NAME="python-automat"
+VERSION=0.7.0
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Finite-state machine module for Python"
+DESCRIPTION="Automat is a library for concise, idiomatic Python expression of
+finite-state automata (particularly deterministic finite-state transducers)."
+
+ARCH=noarch
+
+python37_automat_CONTENTS+=" usr/bin/automat-visualize"
+REQUIRES_EXCLUDE_FROM="*/_discover.py:*/_visualize.py:*/_test/*"
